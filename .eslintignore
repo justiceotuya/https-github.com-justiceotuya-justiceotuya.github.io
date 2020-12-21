@@ -1,0 +1,15 @@
+/build/**
+/coverage/**
+/docs/**
+/jsdoc/**
+/templates/**
+/tests/bench/**
+/test-config/**
+/tests/fixtures/**
+/tests/performance/**
+/tmp/**
+/.history
+/history
+next.config.js
+
+# Add any other files

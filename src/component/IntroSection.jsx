@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledIndexPage = styled.main`
-height: 85vh;
-width: 100vw;
+height: 95vh;
+width: 100%;
     max-width: 1024px;
     display: flex;
     justify-content: center;
@@ -12,9 +12,14 @@ width: 100vw;
     padding: 2em;
     margin: 0 auto;
 
+
+    @media screen and (max-width: 1023px){
+        max-width: 700px;
+    }
+
     .greeting {
-      font-size: 20px;
-    line-height: 38px;
+      font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height:  clamp(40px, 200%, 46px);
     font-weight: 400;
     color: #342e38;
 
@@ -23,7 +28,7 @@ width: 100vw;
     }
 
 
-@media screen and (min-width: 480px) and (max-width: 767px){
+/* @media screen and (min-width: 480px) and (max-width: 767px){
     font-size: 24px;
     line-height: 40px;
     }
@@ -35,20 +40,34 @@ width: 100vw;
     @media screen  and (min-width: 992px){
       font-size: 32px;
     line-height: 56px;
-}
+} */
 
 
   }
 
-    `
+    `;
 
-export const IntroSection = () => {
-    return (
-        <StyledIndexPage className="container">
-            <title>Home Page</title>
-            <p className="greeting">Hello,</p>
-            <p className="greeting">my name is <strong>Justice Otuya</strong>, I’m a <strong>Web Developer</strong> based in Lagos, Nigeria and this is a selection of my <strong>Personal</strong> and <strong>Professional work.</strong></p>
-        </StyledIndexPage>
+export const IntroSection = () => (
+    <StyledIndexPage className="container">
+        <title>Home Page</title>
+        <p className="greeting">Hello,</p>
+        <p className="greeting">
+            my name is
+            {' '}
+            <strong>Justice Otuya</strong>
+            , I am a
+            {' '}
+            <strong>Web Developer</strong>
+            {' '}
+            based in Lagos, Nigeria and this is a selection of my
+            {' '}
+            <strong>Personal</strong>
+            {' '}
+            {' '}
+            and
+            {' '}
+            <strong>Professional work.</strong>
+        </p>
+    </StyledIndexPage>
 
-    )
-}
+);

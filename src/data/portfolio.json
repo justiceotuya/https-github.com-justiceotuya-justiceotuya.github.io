@@ -1,0 +1,206 @@
+[
+    {
+       "project":"NIMC",
+       "title":"nimc",
+       "tagLine":"National Identity Management Commission's Identification Project Tracking Dashboard",
+       "imagesFileName":[
+          {
+             "imageName":"nimc_data_2.png",
+             "imageAlt":"NIMC activities",
+             "isMobile":false
+          },
+          {
+             "imageName":"nimc_data.png",
+             "imageAlt":"NIMC data",
+             "isMobile":false
+          },
+          {
+             "imageName":"nimc_search.png",
+             "imageAlt":"NIMC Search",
+             "isMobile":false
+          }
+       ],
+       "coverImageName":"nimc_data.png",
+       "coverImageAlt":"NIMC data"
+    },
+    {
+       "project":"JAMB",
+       "title":"jamb",
+       "tagLine":"Appointment Scheduling App for Students with Cases across Nigeria",
+       "imagesFileName":[
+          {
+             "imageName":"jamb_home.png",
+             "imageAlt":"JAMB home",
+             "isMobile":false
+          },
+          {
+             "imageName":"jamb_admin.png",
+             "imageAlt":"JAMB admin",
+             "isMobile":false
+          },
+          {
+             "imageName":"jamb_admin_2.png",
+             "imageAlt":"JAMB admin part two",
+             "isMobile":false
+          }
+       ],
+       "coverImageName":"jamb_home.png",
+       "coverImageAlt":"JAMB home"
+    },
+    {
+       "project":"JOYUP",
+       "title":"joyup",
+       "tagLine":"Full Fledge e-Commerce App for Ordering from several different merchants",
+       "imagesFileName":[
+          {
+             "imageName":"joyup_modal_desktop.png",
+             "imageAlt":"JOYUP desktop modal",
+             "isMobile": true
+          },
+          {
+             "imageName":"joyup_home.png",
+             "imageAlt":"JOYUP home",
+             "isMobile":false
+          },
+          {
+             "imageName":"joyup_home_with_modal.png",
+             "imageAlt":"JOYUP home with modal",
+             "isMobile":false
+          },
+          {
+             "imageName":"joyup_home_schedule.png",
+             "imageAlt":"JOYUP home with schedule",
+             "isMobile":false
+          },
+          {
+             "imageName":"joyup_cart_mobile.png",
+             "imageAlt":"JOYUP cart mobile",
+             "isMobile": true
+          }
+       ],
+       "coverImageName":"joyup_home.png",
+       "coverImageAlt":"JOYUP home"
+    },
+    {
+       "project":"NAPTIP",
+       "title":"naptip",
+       "tagLine":"Reporting Dashboard that logs all report of abuse and trafficking via USSD from across Nigeria",
+       "imagesFileName":[
+          {
+             "imageName":"naptip_table.png",
+             "imageAlt":"NAPTIP desktop modal",
+             "isMobile":false
+          },
+          {
+             "imageName":"naptip_stat.png",
+             "imageAlt":"NAPTIP home",
+             "isMobile":false
+          },
+          {
+             "imageName":"naptip_modal.png",
+             "imageAlt":"NAPTIP home with modal",
+             "isMobile":false
+          }
+       ],
+       "coverImageName":"naptip_stat.png",
+       "coverImageAlt":"NAPTIP statistics"
+    },
+    {
+       "project":"OPPO",
+       "title":"oppo",
+       "tagLine":"Photography contest web app for Oppo used in promotion of the OPPO Reno 2 device",
+       "imagesFileName":[
+          {
+             "imageName":"oppo_submissions.png",
+             "imageAlt":"OPPO submissions page",
+             "isMobile":false
+          },
+          {
+             "imageName":"oppo_profile.png",
+             "imageAlt":"OPPO profile page",
+             "isMobile":false
+          },
+          {
+             "imageName":"oppo_profile_welcome.png",
+             "imageAlt":"OPPO welcome page",
+             "isMobile":false
+          },
+          {
+             "imageName":"oppo_preview.png",
+             "imageAlt":"OPPO preview component ",
+             "isMobile":false
+          },
+          {
+             "imageName":"oppo_home.png",
+             "imageAlt":"OPPO home page",
+             "isMobile":false
+          },
+          {
+             "imageName":"oppo_gallery.png",
+             "imageAlt":"OPPO gallery page",
+             "isMobile":false
+          },
+          {
+             "imageName":"opo_preview_2.png",
+             "imageAlt":"OPPO preview",
+             "isMobile":false
+          }
+       ],
+       "coverImageName":"oppo_home.png",
+       "coverImageAlt":"OPPO home"
+    },
+    {
+       "project":"UNIFEMGA",
+       "title":"unifemga",
+       "tagLine":"Loan Web app for a cooperative",
+       "imagesFileName":[
+          {
+             "imageName":"unifemga_login.png",
+             "imageAlt":"UNIFEMGA login page",
+             "isMobile":false
+          },
+          {
+             "imageName":"unifemga_home.png",
+             "imageAlt":"UNIFEMGA home page",
+             "isMobile":false
+          },
+          {
+             "imageName":"unifemga_email.png",
+             "imageAlt":"UNIFEMGA email page",
+             "isMobile":false
+          },
+          {
+             "imageName":"unifemga_edit_admin.png",
+             "imageAlt":"UNIFEMGA edit admin page ",
+             "isMobile":false
+          },
+          {
+             "imageName":"unifemga_dashboard.png",
+             "imageAlt":"UNIFEMGA dashboard page",
+             "isMobile":false
+          },
+          {
+             "imageName":"unifemga_credit_request.png",
+             "imageAlt":"UNIFEMGA credit request page",
+             "isMobile":false
+          },
+          {
+             "imageName":"unifemga_application_form.png",
+             "imageAlt":"UNIFEMGA application form page",
+             "isMobile":false
+          },
+          {
+             "imageName":"unifemga_admin_list.png",
+             "imageAlt":"UNIFEMGA admin list page",
+             "isMobile":false
+          },
+          {
+             "imageName":"unifemga_admin_list_modal.png",
+             "imageAlt":"UNIFEMGA admin list modal component",
+             "isMobile":false
+          }
+       ],
+       "coverImageName":"unifemga_home.png",
+       "coverImageAlt":"UNIFEMGA home"
+    }
+ ]

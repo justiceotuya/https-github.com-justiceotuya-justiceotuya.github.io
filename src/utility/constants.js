@@ -5,7 +5,7 @@ export const imagesData = [
         Identification Project Tracking Dashboard`,
         imagesFileName: [
             {
-                imageName: 'nimc_activity.png',
+                imageName: 'nimc_data_2.png',
                 imageAlt: 'NIMC activities',
             },
             {

@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gh-pages -d public"
   },
   "license": "0BSD",
   "dependencies": {
@@ -25,6 +26,7 @@
     "gatsby-plugin-sharp": "^2.11.1",
     "gatsby-plugin-styled-components": "^3.7.0",
     "gatsby-source-filesystem": "^2.8.0",
+    "gatsby-transformer-json": "^2.8.0",
     "gatsby-transformer-sharp": "^2.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

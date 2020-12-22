@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from '.';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import Image from './Image';
 import { imagesData } from '../utility/constants';
 
 const StyledShowCaseSection = styled.section`
@@ -32,26 +33,50 @@ const StyledShowCaseSection = styled.section`
     }
 `;
 
-export const ShowCaseSection = () => (
-    <StyledShowCaseSection className="showcaseSection">
-        {
-            imagesData.map(image => {
-                const {
-                    project, tagLine, coverImageName, coverImageAlt,
-                } = image;
-                return (
-                    <Image
-                        fileName={coverImageName}
-                        alt={coverImageAlt}
-                        className="image_test"
-                        to={project.toLowerCase()}
-                        key={project}
-                        company={project}
-                        slogan={tagLine}
-                    />
-                );
-            })
+const query = graphql`
+query {
+    allPortfolioJson {
+        nodes {
+          coverImageAlt
+          coverImageName
+          id
+          imagesFileName {
+            imageAlt
+            imageName
+          }
+          project
+          tagLine
+          title
         }
+      }
+}`;
 
-    </StyledShowCaseSection>
-);
+export const ShowCaseSection = () => {
+    const { allPortfolioJson } = useStaticQuery(query);
+    console.log(allPortfolioJson.nodes);
+    return (
+        <StyledShowCaseSection className="showcaseSection">
+            {
+                allPortfolioJson.nodes.map(imageData => {
+                    const {
+                        project, tagLine, coverImageName, coverImageAlt, title,
+                    } = imageData;
+                    return (
+                        <Image
+                            fileName={coverImageName}
+                            alt={coverImageAlt}
+                            className="image_test"
+                            title={title}
+                            key={project}
+                            company={project}
+                            slogan={tagLine}
+                            portfolioData={imageData}
+                            hasOverLay
+                        />
+                    );
+                })
+            }
+
+        </StyledShowCaseSection>
+    );
+};

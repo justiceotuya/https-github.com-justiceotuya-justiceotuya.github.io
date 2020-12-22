@@ -15,10 +15,10 @@ transition: opacity .2s ease-in-out;
 
 .company, .slogan {
   opacity: 1;
-  transition: opacity .3s ease-in-out .4s;
+  transition: opacity .3s ease-in-out .3s;
 }
 .slogan {
-  transition: opacity .3s ease-in-out .5s;
+  transition: opacity .3s ease-in-out .4s;
 }
 }
 
@@ -55,7 +55,7 @@ transition: opacity .2s ease-in-out;
 
 const Image = ({
     fileName, alt, style, className, to, company,
-    slogan,
+    slogan, portfolioData, title, hasOverLay, isMobile,
 }) => {
     const { allImageSharp } = useStaticQuery(graphql`
     query {
@@ -74,15 +74,28 @@ const Image = ({
     // get color from image
     const { data } = usePalette(fluid.src);
     return (
-        <Link to={to}>
-            <StyledFigure backgroundOverlay={data.darkVibrant}>
-                <div className="overlay">
-                    <p className="company">{company}</p>
-                    <p className="slogan">{slogan}</p>
-                </div>
-                <Img fluid={fluid} alt={alt} className={className} />
-            </StyledFigure>
-        </Link>
+        <StyledFigure backgroundOverlay={data.darkVibrant}>
+            {
+                hasOverLay ? (
+                    <Link
+                        to={`/portfolio/${title}`}
+                        state={portfolioData}
+                    >
+                        <div className="overlay">
+                            <p className="company">{company}</p>
+                            <p className="slogan">{slogan}</p>
+                        </div>
+                        <Img
+                            fluid={fluid}
+                            alt={alt}
+                            className={className}
+                            isMobile={isMobile}
+                        />
+                    </Link>
+                )
+                    : <Img fluid={fluid} alt={alt} className={className} isMobile={isMobile} />
+            }
+        </StyledFigure>
     );
 };
 

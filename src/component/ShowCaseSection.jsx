@@ -53,7 +53,7 @@ query {
 
 export const ShowCaseSection = () => {
     const { allPortfolioJson } = useStaticQuery(query);
-    console.log(allPortfolioJson.nodes);
+
     return (
         <StyledShowCaseSection className="showcaseSection">
             {

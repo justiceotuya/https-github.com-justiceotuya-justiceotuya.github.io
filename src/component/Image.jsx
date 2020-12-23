@@ -47,7 +47,8 @@ transition: opacity .2s ease-in-out;
     }
 
     .slogan {
-      font-size: 25px;
+      /* font-size: 25px; */
+      font-size: clamp(.7rem, 2vw, 1.7rem);
       opacity: 0;
     }
 }

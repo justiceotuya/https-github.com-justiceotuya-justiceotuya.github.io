@@ -172,19 +172,6 @@ export default function Component({ data }) {
                         <p className="title">Description :</p>
                         <p className="text"> Lorem ipsum dolor sit amet consectetur, adipisiusandae rerucing elit. Dolores quisquam iusto, cumque possimus, quasi odit harum impedit voluptatum recm libero natus molestiae vitae dignissimos quod neque minus quaerat. Nisi.</p>
                     </div> */}
-
-                    {/* <p>
-                        <strong>Client</strong>
-                        {' '}
-                        :
-                        {' '}
-                        {project}
-                    </p> */}
-                    {/* <p>
-                        <strong>Description</strong>
-                        {' '}
-                        : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quisquam iusto, cumque possimus, quasi odit harum impedit voluptatum recusandae rerum libero natus molestiae vitae dignissimos quod neque minus quaerat. Nisi.
-                    </p> */}
                 </section>
                 {
                     imagesFileName.map(image => {

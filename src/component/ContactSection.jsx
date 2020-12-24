@@ -88,6 +88,9 @@ export const ContactSection = () => (
             <div className="socialMedia">
                 <a href="http://github.com/justiceotuya" target="_blank"> Github</a>
             </div>
+            <div className="socialMedia">
+                <a href="https://zety.com/profile/justiceotuya" target="_blank"> Resume</a>
+            </div>
         </div>
 
     </StyledContactSectionContainer>

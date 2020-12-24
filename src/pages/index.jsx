@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { Helmet } from 'react-helmet';
 import {
     Layout,
     IntroSection,
@@ -9,6 +9,10 @@ import {
 
 const IndexPage = () => (
     <Layout>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Justice Otuya | Portfolio</title>
+        </Helmet>
         <IntroSection />
         <ShowCaseSection />
         <ContactSection />

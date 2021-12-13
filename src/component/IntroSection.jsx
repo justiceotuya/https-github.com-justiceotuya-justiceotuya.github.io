@@ -53,20 +53,17 @@ export const IntroSection = () => (
         <p className="greeting">Hello,</p>
         <p className="greeting">
             my name is
-            {' '}
-            <strong>Justice Otuya</strong>
+            <strong> Justice Otuya</strong>
             , I am a
-            {' '}
-            <strong>Web Developer</strong>
-            {' '}
+            <strong> Web Developer</strong>
             based in Lagos, Nigeria and this is a selection of my
-            {' '}
-            <strong>Personal</strong>
-            {' '}
-            {' '}
+            <strong> Personal </strong>
             and
-            {' '}
-            <strong>Professional work.</strong>
+            <strong> Professional work.</strong>
+            <br />
+            <p>
+                I have built and bootstrapped projects for 3 startups from the ground up to production Skilled in the following tools and technologies:- NodeJs, ExpressJs, ReactJs, Redux, HTML, SCSS, CSS, Postman, Bootstrap, GitHub, GitLab, Netlify, Jira, Trello, TDD, PostgreSQL, MySQL, MongoDB, NextJs
+            </p>
         </p>
     </StyledIndexPage>
 
